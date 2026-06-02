@@ -1,0 +1,117 @@
+/* ── Contact ── */
+.contact__subtitle {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  color: var(--text-secondary);
+  max-width: 520px;
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-10);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+  margin-bottom: var(--space-10);
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all var(--dur-small) var(--ease-smooth);
+}
+
+.contact__card:hover {
+  border-color: var(--accent-solid);
+  background: var(--bg-surface-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.contact__card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-solid);
+  flex-shrink: 0;
+}
+
+.contact__card-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.contact__card-label {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+}
+
+.contact__card-value {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact__card-arrow {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: all var(--dur-small) var(--ease-smooth);
+}
+
+.contact__card:hover .contact__card-arrow {
+  color: var(--accent-solid);
+  transform: translate(2px, -2px);
+}
+
+/* CTA Button */
+.contact__cta-wrap {
+  text-align: center;
+}
+
+.contact__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-10);
+  background: var(--gradient-brand);
+  color: #fff;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  font-family: var(--font-sans);
+  border-radius: var(--radius-full);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 28px rgba(139, 92, 246, 0.3);
+  transition: all var(--dur-small) var(--ease-smooth);
+}
+
+.contact__cta-btn:hover {
+  box-shadow: 0 8px 40px rgba(139, 92, 246, 0.45);
+  transform: translateY(-3px);
+}
+
+.contact__cta-btn:active {
+  transform: scale(0.97) translateY(0);
+}
+
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}

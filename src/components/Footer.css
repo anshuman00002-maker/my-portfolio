@@ -1,0 +1,30 @@
+/* ── Footer ── */
+.footer {
+  position: relative;
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+}
+
+.footer__accent {
+  width: 80px;
+  height: 2px;
+  background: var(--gradient-brand);
+  margin: 0 auto var(--space-6);
+  border-radius: 2px;
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer__copy {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.footer__tagline {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+}

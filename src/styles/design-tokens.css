@@ -1,0 +1,115 @@
+/* =============================================
+   DESIGN TOKENS — Cosmic Dark Portfolio
+   ============================================= */
+
+:root {
+  /* ── Colors ── */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0f0f18;
+  --bg-surface: rgba(255, 255, 255, 0.03);
+  --bg-surface-hover: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --glass-border-hover: rgba(255, 255, 255, 0.14);
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #a0a0b8;
+  --text-muted: #5e5e74;
+
+  --accent-violet: #7c3aed;
+  --accent-pink: #db2777;
+  --accent-solid: #8b5cf6;
+  --accent-glow: rgba(139, 92, 246, 0.15);
+  --accent-glow-strong: rgba(139, 92, 246, 0.3);
+  --gradient-brand: linear-gradient(135deg, #7c3aed, #db2777);
+  --gradient-brand-text: linear-gradient(135deg, #a78bfa, #f472b6);
+  --gradient-hero-glow: radial-gradient(ellipse 60% 50% at 50% 40%, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --fs-display: clamp(2.5rem, 5vw, 4rem);
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-caption: 0.75rem;
+  --fs-tag: 0.8125rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  --ls-tight: -0.03em;
+  --ls-snug: -0.01em;
+  --ls-normal: 0;
+  --ls-wide: 0.04em;
+  --ls-wider: 0.08em;
+
+  /* ── Spacing (8pt grid) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ── Radii ── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.15);
+  --shadow-glow-strong: 0 0 60px rgba(139, 92, 246, 0.25);
+
+  /* ── Motion ── */
+  --ease-quick: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.22, 0.9, 0.3, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-micro: 100ms;
+  --dur-small: 200ms;
+  --dur-medium: 400ms;
+  --dur-large: 650ms;
+  --dur-page: 800ms;
+
+  /* ── Layout ── */
+  --max-width: 1120px;
+  --nav-height: 72px;
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-micro: 0ms;
+    --dur-small: 0ms;
+    --dur-medium: 0ms;
+    --dur-large: 0ms;
+    --dur-page: 0ms;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
